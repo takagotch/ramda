@@ -27,6 +27,16 @@ identity()
 ```
 <script src="path/to/yourCopyOf/ramda.js"></script>
 <script src="path/to/yourCopyOf/ramda.min.js"></script>
+```
 
+```js
+const greet = R.replace('{name}', R._, 'Hello, {name}!');
+greet('Alice');
+
+R.add(2, 3);
+R.add(7)(10);
+
+const mapIndexed = R.addIndex(R.map);
+mapIndexed((val, idx) => idx + '-' + val, ['f', 'o', 'o', 'b', 'a', 'r']);
 ```
 
